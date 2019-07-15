@@ -7,7 +7,7 @@
  */
 ?>
 
-<div id="sidebar">
+<div id="sidebar" class="left">
 
     <?php dynamic_sidebar( 'sidebar' ); ?>
 

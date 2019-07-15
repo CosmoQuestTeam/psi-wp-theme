@@ -29,6 +29,29 @@ a:hover {
     text-decoration: underline;
 }
 
+p {
+    margin-bottom: 0.6em;
+}
+
+H1 {
+    font-size: 3.5em;
+    font-family: "Times New Roman", Times, serif;
+}
+
+H2 {
+    font-size: 1.75em;
+    margin-bottom: 0.75em;
+}
+
+H3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+H4, H5, H6 {
+    font-size: 1em;
+}
+
 .left {
     float: left;
 }
@@ -36,15 +59,19 @@ a:hover {
 .middle {
     float: left;
     margin: 0 auto;
-    text-align: center ;
+    text-align: center;
 }
 
 .right {
     float: right;
+    text-align: right;
 }
 
 .container {
-    width: 800px;
+    max-width: 820px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -65,9 +92,6 @@ a:hover {
 #title h1 {
     color: #ffffff;
     margin-top: 90px;
-    font-size: 40px;
-    font-family: "Times New Roman", Times, serif;
-
 }
 
 #logo {
@@ -88,6 +112,9 @@ a:hover {
 #main {
     min-height: 100px;
     margin-top: 20px;
+    max-width: 600px;
+    margin-right: 20px;
+    width: 100%
 }
 
 /* -------------------------------------------------------
@@ -97,9 +124,8 @@ a:hover {
 #sidebar {
     width: 160px;
     margin-top: 20px;
-    float: right;
+    padding-left: 19px;
     border-left: #5a4a42 1px solid;
-    padding-left: 20px;
 }
 
 /* -------------------------------------------------------

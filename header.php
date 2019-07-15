@@ -6,9 +6,7 @@
  * Time: 11:04 AM
  */
 ?>
-
 <html <?php language_attributes(); ?>>
-
 <head>
 
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
@@ -28,7 +26,6 @@
     <meta name="twitter:site"       content="@planetarysci" />
     <meta name="twitter:creator"    content="@planetarysci" />
     <meta property="og:url"         content="http://psi.edu" />
-
 
     <?php wp_head(); ?>
 </head>
