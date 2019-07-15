@@ -188,6 +188,10 @@ Text Domain: psi-wp-theme
 
 /* Footer Menu ------------------------------------------- */
 
+    ul#menu-bottom {
+        margin-top: 20px;
+    }
+
     ul#menu-bottom li {
         margin-left: 1em;
     }
