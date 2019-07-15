@@ -30,8 +30,8 @@ function arphabet_widgets_init() {
         'id'            => 'sidebar',
         'before_widget' => '<div>',
         'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="rounded">',
-        'after_title'   => '</h2>',
+        'before_title'  => '<h3 class="rounded">',
+        'after_title'   => '</h3>',
     ) );
 
     register_sidebar( array(
@@ -39,8 +39,8 @@ function arphabet_widgets_init() {
         'id'            => 'footer_left',
         'before_widget' => '<div class="widget">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h2>',
-        'after_title'   => '</h2>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
     ) );
 
     register_sidebar( array(
@@ -48,8 +48,8 @@ function arphabet_widgets_init() {
         'id'            => 'footer_middle',
         'before_widget' => '<div class="widget">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h2>',
-        'after_title'   => '</h2>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
     ) );
 
     register_sidebar( array(
@@ -57,8 +57,8 @@ function arphabet_widgets_init() {
         'id'            => 'footer_right',
         'before_widget' => '<div class="widget">',
         'after_widget'  => '</div>',
-        'before_title'  => '<h2 class="rounded">',
-        'after_title'   => '</h2>',
+        'before_title'  => '<h3 class="rounded">',
+        'after_title'   => '</h3>',
     ) );
 
 }

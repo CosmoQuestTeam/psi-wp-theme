@@ -90,8 +90,12 @@ H4, H5, H6 {
 }
 
 #title h1 {
-    color: #ffffff;
     margin-top: 90px;
+}
+
+#title h1 a {
+    text-decoration: none;
+    color: #ffffff;
 }
 
 #logo {
@@ -136,6 +140,17 @@ H4, H5, H6 {
     background: #002d56;
     min-height: 100px;
     color: #ffffff;
+    padding-bottom: 20px;
+    font-size: 0.9em;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+#footer .widget h3 {
+    font-size: 1.2em;
 }
 
 /* -------------------------------------------------------

@@ -36,11 +36,14 @@
     <div class="container">
         <div id="title">
             <h1>
-                <?php echo get_bloginfo('name'); ?>
+                <a href="<?php echo get_site_url();?>">
+                    <?php echo get_bloginfo('name'); ?>
+                </a>
             </h1>
         </div>
 
         <div id="logo">
+            <a href="http://psi.edu">
             <?php
             $custom_logo_id = get_theme_mod( 'custom_logo' );
             $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
@@ -51,6 +54,7 @@
                 echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
             }
             ?>
+            </a>
         </div>
     </div>
 

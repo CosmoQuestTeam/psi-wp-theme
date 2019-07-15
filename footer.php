@@ -20,4 +20,5 @@
             <?php dynamic_sidebar( 'footer_right' ); ?>
         </div>
     </div>
+    <div style="clear: both;"></div>
 </div>
