@@ -63,3 +63,6 @@ function arphabet_widgets_init() {
 
 }
 add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+// disable the admin bar
+show_admin_bar(false);
