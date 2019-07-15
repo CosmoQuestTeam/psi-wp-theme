@@ -8,7 +8,6 @@
 ?>
 <html <?php language_attributes(); ?>>
 <head>
-
     <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
 
     <!-- Metadata -->
@@ -31,6 +30,12 @@
 </head>
 
 <body>
+
+<div id="top-menu">
+    <div class="container">
+        <?php wp_nav_menu( array( 'theme_location' => 'top-menu' ) ); ?>
+    </div>
+</div>
 
 <div id="header">
     <div class="container">
@@ -57,6 +62,10 @@
             </a>
         </div>
     </div>
-
 </div>
+
+<div class="container">
+    <div id="header-menu"><?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?></div>
+</div>
+
 

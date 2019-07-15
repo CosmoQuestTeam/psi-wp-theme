@@ -23,7 +23,7 @@ add_action( 'after_setup_theme', 'custom_logo_setup' );
 
 /** Add Widgets to theme */
 
-function arphabet_widgets_init() {
+function register_my_widgets_init() {
 
     register_sidebar( array(
         'name'          => 'sidebar',
@@ -62,7 +62,21 @@ function arphabet_widgets_init() {
     ) );
 
 }
-add_action( 'widgets_init', 'arphabet_widgets_init' );
+add_action( 'widgets_init', 'register_my_widgets_init' );
 
-// disable the admin bar
+/** Add Menus to theme */
+function register_my_menus() {
+    register_nav_menus(
+        array(
+            'top-menu' => __( 'Top Menu'),
+            'header-menu' => __( 'Header Menu' ),
+            'footer-menu' => __( 'Footer Menu' )
+        )
+    );
+}
+add_action( 'init', 'register_my_menus' );
+
+
+
+/** disable the admin bar */
 show_admin_bar(false);

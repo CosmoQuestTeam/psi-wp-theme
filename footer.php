@@ -11,6 +11,7 @@
     <div class="container">
         <div class="left" style="width: 20%;">
             <?php dynamic_sidebar( 'footer_left' ); ?>
+            <div id="footer-menu"><?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?></div>
         </div>
 
         <div class="middle" style="width: 60%">

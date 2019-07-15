@@ -6,157 +6,196 @@ Author: Pamela L Gay
 Text Domain: psi-wp-theme
 */
 
-* {
-    margin: 0;
-    padding: 0;
-}
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-body {
-    background: #ffffff;
-    font-size: 14px;
-    line-height: 1.4em;
-    text-align: left;
-    color: #5a4a42;
-    font-family: Arial, Helvetica, sans-serif;
-}
+    body {
+        background: #ffffff;
+        font-size: 14px;
+        line-height: 1.4em;
+        text-align: left;
+        color: #5a4a42;
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-a {
-    color: #2aa661;
-    text-decoration: none;
-}
+    a {
+        color: #2aa661;
+        text-decoration: none;
+    }
 
-a:hover {
-    text-decoration: underline;
-}
+    a:hover {
+        text-decoration: underline;
+    }
 
-p {
-    margin-bottom: 0.6em;
-}
+    p {
+        margin-bottom: 0.6em;
+    }
 
-H1 {
-    font-size: 3.5em;
-    font-family: "Times New Roman", Times, serif;
-}
+    H1 {
+        font-size: 3.5em;
+        font-family: "Times New Roman", Times, serif;
+    }
 
-H2 {
-    font-size: 1.75em;
-    margin-bottom: 0.75em;
-}
+    H2 {
+        font-size: 1.75em;
+        margin-bottom: 0.75em;
+    }
 
-H3 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-}
+    H3 {
+        font-size: 1.5em;
+        margin-bottom: 0.5em;
+    }
 
-H4, H5, H6 {
-    font-size: 1em;
-}
+    H4, H5, H6 {
+        font-size: 1em;
+    }
 
-.left {
-    float: left;
-}
+    .left {
+        float: left;
+    }
 
-.middle {
-    float: left;
-    margin: 0 auto;
-    text-align: center;
-}
+    .middle {
+        float: left;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-.right {
-    float: right;
-    text-align: right;
-}
+    .right {
+        float: right;
+        text-align: right;
+    }
 
-.container {
-    max-width: 820px;
-    padding-left: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-    margin: 0 auto;
-}
+    .container {
+        max-width: 820px;
+        padding-left: 20px;
+        width: 100%;
+        margin: 0 auto;
+    }
 
 /* -------------------------------------------------------
    Header
    ------------------------------------------------------- */
 
-#header {
-    background: #2aa661;
-    height: 170px;
-    width: 100%;
-}
+    #header {
+        background: #2aa661;
+        height: 170px;
+        width: 100%;
+    }
 
-#title {
-    float: left;
-}
+    #title {
+        float: left;
+    }
 
-#title h1 {
-    margin-top: 90px;
-}
+    #title h1 {
+        margin-top: 90px;
+    }
 
-#title h1 a {
-    text-decoration: none;
-    color: #ffffff;
-}
+    #title h1 a {
+        text-decoration: none;
+        color: #ffffff;
+    }
 
-#logo {
-    padding: 10px;
-    float: right;
-}
+    #logo {
+        padding: 10px;
+        float: right;
+    }
 
+    #logo img {
+        height: 150px;
 
-#logo img {
-    height: 150px;
-
-}
+    }
 
 /* -------------------------------------------------------
    Main
    ------------------------------------------------------- */
 
-#main {
-    min-height: 100px;
-    margin-top: 20px;
-    max-width: 600px;
-    margin-right: 20px;
-    width: 100%
-}
+    #main {
+        min-height: 100px;
+        margin-top: 20px;
+        max-width: 600px;
+        margin-right: 20px;
+        width: 100%
+    }
 
 /* -------------------------------------------------------
    Sidebar
    ------------------------------------------------------- */
 
-#sidebar {
-    width: 160px;
-    margin-top: 20px;
-    padding-left: 19px;
-    border-left: #5a4a42 1px solid;
-}
+    #sidebar {
+        width: 160px;
+        margin-top: 20px;
+        padding-left: 19px;
+        border-left: #5a4a42 1px solid;
+    }
 
 /* -------------------------------------------------------
    Footer
    ------------------------------------------------------- */
 
-#footer {
-    background: #002d56;
-    min-height: 100px;
-    color: #ffffff;
-    padding-bottom: 20px;
-    font-size: 0.9em;
-}
+    #footer {
+        background: #002d56;
+        min-height: 100px;
+        color: #ffffff;
+        padding-bottom: 20px;
+        font-size: 0.9em;
+    }
 
-#footer a {
-    color: #ffffff;
-    text-decoration: underline;
-}
+    #footer a {
+        color: #ffffff;
+        text-decoration: underline;
+    }
 
-#footer .widget h3 {
-    font-size: 1.2em;
-}
+    #footer .widget h3 {
+        font-size: 1.2em;
+    }
+
+/* -------------------------------------------------------
+   Menus
+   ------------------------------------------------------- */
+
+/* Top Menu ---------------------------------------------- */
+
+    #top-menu {
+        background: #002d56;
+        padding: 0.5em 0;
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+
+    #top-menu a {
+
+    }
+
+/* Header Menu ------------------------------------------- */
+
+    #header-menu {
+        text-align: left;
+        padding: 0.5em 0;
+        font-weight: lighter;
+        font-size: 0.85em;
+    }
+
+    #header-menu a {
+        color: #5a4a42;
+    }
+
+    ul#menu-top li, ul#menu-middle li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+/* Footer Menu ------------------------------------------- */
+
+    ul#menu-bottom li {
+        margin-left: 1em;
+    }
 
 /* -------------------------------------------------------
    Widgets
    ------------------------------------------------------- */
 
-.widget {
-    padding: 20px 0;
-}
+    .widget {
+        padding: 20px 0;
+    }
