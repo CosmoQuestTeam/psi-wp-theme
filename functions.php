@@ -21,6 +21,18 @@ add_theme_support( 'custom-logo', $defaults );
 add_action( 'after_setup_theme', 'custom_logo_setup' );
 
 
+/** Add shortcode support to everything */
+do_shortcode( string $content, bool $ignore_html = false );
+
+add_filter( 'widget_text', 'shortcode_unautop');
+add_filter( 'widget_text', 'do_shortcode');
+add_filter( 'the_excerpt', 'shortcode_unautop');
+add_filter( 'the_excerpt', 'do_shortcode');
+add_filter( 'term_description', 'shortcode_unautop');
+add_filter( 'term_description', 'do_shortcode' );
+add_filter('shortcode_function_name', 'do_shortcode');
+
+
 /** Add Widgets to theme */
 
 function register_my_widgets_init() {
