@@ -22,7 +22,6 @@ add_action( 'after_setup_theme', 'custom_logo_setup' );
 
 
 /** Add shortcode support to everything */
-do_shortcode( string $content, bool $ignore_html = false );
 
 add_filter( 'widget_text', 'shortcode_unautop');
 add_filter( 'widget_text', 'do_shortcode');
