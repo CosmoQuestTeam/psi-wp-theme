@@ -9,14 +9,14 @@
 add_theme_support( 'custom-logo' );
 
 function custom_logo_setup() {
-$defaults = array(
-'height'      => 100,
-'width'       => 400,
-'flex-height' => true,
-'flex-width'  => true,
-'header-text' => array( 'site-title', 'site-description' ),
-);
-add_theme_support( 'custom-logo', $defaults );
+    $defaults = array(
+        'height'      => 100,
+        'width'       => 400,
+        'flex-height' => true,
+        'flex-width'  => true,
+        'header-text' => array( 'site-title', 'site-description' ),
+    );
+    add_theme_support( 'custom-logo', $defaults );
 }
 add_action( 'after_setup_theme', 'custom_logo_setup' );
 
@@ -28,12 +28,12 @@ add_filter( 'widget_text', 'do_shortcode');
 add_filter( 'the_excerpt', 'shortcode_unautop');
 add_filter( 'the_excerpt', 'do_shortcode');
 add_filter( 'term_description', 'shortcode_unautop');
+add_filter( 'term_description', 'do_shortcode' );
 function filter_content_example($content) {
     $content = do_shortcode($content);
     return $content;
 }
 add_filter('the_content', 'filter_content_example');
-
 
 
 /** Add Widgets to theme */
