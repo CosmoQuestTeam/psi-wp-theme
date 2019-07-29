@@ -28,8 +28,12 @@ add_filter( 'widget_text', 'do_shortcode');
 add_filter( 'the_excerpt', 'shortcode_unautop');
 add_filter( 'the_excerpt', 'do_shortcode');
 add_filter( 'term_description', 'shortcode_unautop');
-add_filter( 'term_description', 'do_shortcode' );
-add_filter('shortcode_function_name', 'do_shortcode');
+function filter_content_example($content) {
+    $content = do_shortcode($content);
+    return $content;
+}
+add_filter('the_content', 'filter_content_example');
+
 
 
 /** Add Widgets to theme */
