@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Homepage */
+/* Template Name: Events */
 
 get_header();
 
