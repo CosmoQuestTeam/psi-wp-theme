@@ -6,7 +6,7 @@ get_header();
 ?>
 
     <div class="container">
-        <div id="main" class="left">
+        <div id="full-width" class="left">
             <div id="post">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <?php the_content(); ?>
@@ -17,7 +17,6 @@ get_header();
             </div><!--/post-->
         </div>
 
-        <?php get_sidebar(); ?>
         <div style="clear:both"></div>
     </div>
 
