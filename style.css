@@ -68,6 +68,10 @@ Description: PSI Theme
         text-align: right;
     }
 
+    .clear {
+        clear: both;
+    }
+
     .container {
         max-width: 820px;
         padding-left: 20px;

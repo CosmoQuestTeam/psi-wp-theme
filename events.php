@@ -20,6 +20,7 @@ get_header();
         </div>
 
     </div>
+    <div style="clear:both;"></div>
 
 <?php
 get_footer();
