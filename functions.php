@@ -117,7 +117,6 @@ add_filter('the_content', 'filter_content_example');
 
 function register_my_widgets_init()
 {
-
     register_sidebar(array(
         'name' => 'sidebar',
         'id' => 'sidebar',
@@ -153,7 +152,6 @@ function register_my_widgets_init()
         'before_title' => '<h3 class="rounded">',
         'after_title' => '</h3>',
     ));
-
 }
 add_action('widgets_init', 'register_my_widgets_init');
 
@@ -172,8 +170,6 @@ add_action('init', 'register_my_menus');
 
 // Add support for responsive embedded content.
 add_theme_support('responsive-embeds');
-
-
 
 /** disable the admin bar */
 show_admin_bar(false);
