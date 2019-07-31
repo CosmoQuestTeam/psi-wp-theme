@@ -6,8 +6,8 @@ get_header();
 ?>
 
     <div class="container">
-        <div id="main" class="left">
-            <div id="full-width">
+        <div id="full-width" class="left">
+
 
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <h2 class="post-title"><?php the_title(); ?></h2>
@@ -16,7 +16,7 @@ get_header();
                 <?php endwhile; else: ?>
                     <?php _e('Sorry, no posts matched your criteria.'); ?>
                 <?php endif; ?>
-            </div><!--/post-->
+
         </div>
 
     </div>
