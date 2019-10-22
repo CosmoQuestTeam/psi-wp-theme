@@ -14,10 +14,10 @@
             <div id="footer-menu"><?php wp_nav_menu( array( 'theme_location' => 'footer-menu' ) ); ?></div>
         </div>
 
-        <div class="middle" style="width: 60%">
+        <div class="middle" style="width: 38%">
             <?php dynamic_sidebar( 'footer_middle' ); ?>
         </div>
-        <div class="right" style="width:20%">
+        <div class="right" style="width:38%;">
             <?php dynamic_sidebar( 'footer_right' ); ?>
         </div>
     </div>

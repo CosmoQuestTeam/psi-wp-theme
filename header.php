@@ -37,7 +37,7 @@
     </div>
 </div>
 
-<div id="header">
+<div id="header" style="background-image: url('<?php header_image() ?>');">
     <div class="container">
         <div id="title">
             <h1>
@@ -45,6 +45,7 @@
                     <?php echo get_bloginfo('name'); ?>
                 </a>
             </h1>
+            <h3><?php echo get_bloginfo('description'); ?></h3>
         </div>
 
         <div id="logo">
@@ -56,7 +57,7 @@
             if ( has_custom_logo() ) {
                 echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . ' Logo">';
             } else {
-                echo '<h1>'. get_bloginfo( 'name' ) .'</h1>';
+                wp_nav_menu(array('theme_location' => 'theme-menu'));
             }
             ?>
             </a>

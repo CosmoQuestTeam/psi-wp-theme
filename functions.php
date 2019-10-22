@@ -44,6 +44,7 @@ if (! function_exists('psiwptheme_setup')) :
             array(
                 'top-menu' => __('Top Menu'),
                 'header-menu' => __('Header Menu'),
+                'theme-menu' => __('Themes Menu'),
                 'footer-menu' => __('Footer Menu')
             )
         );
@@ -173,3 +174,14 @@ add_theme_support('responsive-embeds');
 
 /** disable the admin bar */
 show_admin_bar(false);
+
+/** Add theme support for a custom header */
+
+$args = array(
+    'flex-width'    => true,
+    'width'         => 980,
+    'flex-height'    => false,
+    'height'        => 170,
+    'default-image' => get_template_directory_uri() . '/images/PSI-Website-Headers.jpg',
+);
+add_theme_support( 'custom-header', $args );

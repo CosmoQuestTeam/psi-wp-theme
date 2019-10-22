@@ -35,7 +35,7 @@ Description: PSI Theme
     }
 
     H1 {
-        font-size: 3.5em;
+        font-size: 4.5em;
         font-family: "Times New Roman", Times, serif;
     }
 
@@ -60,12 +60,10 @@ Description: PSI Theme
     .middle {
         float: left;
         margin: 0 auto;
-        text-align: center;
     }
 
     .right {
         float: right;
-        text-align: right;
     }
 
     .clear {
@@ -85,7 +83,6 @@ Description: PSI Theme
 
     #header {
         background-color: #2aa661;
-        background-image: url("images/PSI-Website-Headers-Astronaut.jpg");
         background-position: center;
         background-repeat: no-repeat;
         height: 170px;
@@ -97,12 +94,18 @@ Description: PSI Theme
     }
 
     #title h1 {
-        margin-top: 90px;
+        margin-top: 70px;
     }
 
     #title h1 a {
         text-decoration: none;
         color: #ffffff;
+    }
+
+    #title h3 {
+        color: #ffffff;
+        font-weight: normal;
+        line-height: 3em;
     }
 
     #logo {
@@ -112,7 +115,26 @@ Description: PSI Theme
 
     #logo img {
         height: 150px;
+    }
 
+    #logo ul {
+        margin-top: 10px;
+        list-style: none;
+    }
+
+    #logo ul li {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        border-bottom: #ffffff 1px solid;
+    }
+
+    #logo ul li a {
+        color: #ffffff;
+    }
+
+    #menu-item-317 {
+        font-weight: bold;
+        font-size: 1.4em !important;
     }
 
 /* -------------------------------------------------------
@@ -133,6 +155,16 @@ Description: PSI Theme
         max-width: 820px;
         width: 100%;
 
+    }
+/* -------------------------------------------------------
+   Homepage
+   ------------------------------------------------------- */
+
+    .home-posts {
+        width: 45%;
+        float: left;
+        height: 200px;
+        padding:  10px 2.5% 10px 0;
     }
 
 /* -------------------------------------------------------
