@@ -100,11 +100,9 @@ add_action( 'after_setup_theme', 'psiwptheme_setup' );
 
 /** Add shortcode support to everything */
 
-add_filter('widget_text', 'shortcode_unautop');
+
 add_filter('widget_text', 'do_shortcode');
-add_filter('the_excerpt', 'shortcode_unautop');
 add_filter('the_excerpt', 'do_shortcode');
-add_filter('term_description', 'shortcode_unautop');
 add_filter('term_description', 'do_shortcode');
 function filter_content_example($content)
 {
